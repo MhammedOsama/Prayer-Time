@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet" />
+    <title>Player Times</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div class="change-city center">
+          <select name="" id="cities-select"></select>
+        </div>
+        <div id="city-name-date">
+          <h1 id="city-name">القاهرة</h1>
+          <h6 id="today-date">الجمعه 24 نوفمبر</h6>
+        </div>
+      </div>
+      <hr />
+      <div class="cards center" style="justify-content: space-around">
+        <div class="card">
+          <div class="header">
+            <h2>الفجر</h2>
+          </div>
+          <div class="body center">
+            <h2 class="time" id="fajr-time">...</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h2>الشروق</h2>
+          </div>
+          <div class="body center">
+            <h2 class="time" id="sunrise-time">...</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h2>الضهر</h2>
+          </div>
+          <div class="body center">
+            <h2 class="time" id="dhuhr-time">...</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h2>العصر</h2>
+          </div>
+          <div class="body center">
+            <h2 class="time" id="asr-time">...</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h2>المغرب</h2>
+          </div>
+          <div class="body center">
+            <h2 class="time" id="maghrib-time">...</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h2>العشاء</h2>
+          </div>
+          <div class="body center">
+            <h2 class="time" id="isha-time">...</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
